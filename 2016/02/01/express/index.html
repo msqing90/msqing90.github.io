@@ -15,7 +15,7 @@
 好啦，咱们切入正题，此篇文章将会介绍我用Express做的第一个‘求职者一项填表系统’的后台部分，首先来">
 <meta property="og:image" content="https://lgitss.files.wordpress.com/2015/02/nsd_node-js-stack.png">
 <meta property="og:image" content="http://yoursite.com/images/folder.jpg">
-<meta property="og:updated_time" content="2016-01-31T16:57:20.000Z">
+<meta property="og:updated_time" content="2016-02-01T00:57:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nodejs初探之一：用Express搭建项目－Step1">
 <meta name="twitter:description" content="踏上程序媛这条路已经快3个年头了，写博客还是第一次。做这个项目呢，也是一个很偶然的机会。作为一个只会js的我，之前看到用node竟然能写后端程序，顿时为身为前端工程师倍感骄傲，哈哈，会js也能成为Fullstack Developer啦！所以，本人就用我的第一个node项目作为自己的开山之作。
@@ -96,11 +96,11 @@
       <ul>
         
           <li>
-            <a href="/2016/02/01/hello-world/">hexo 指南</a>
+            <a href="/2016/02/01/express/">Nodejs初探之一：用Express搭建项目－Step1</a>
           </li>
         
           <li>
-            <a href="/2016/02/01/express/">Nodejs初探之一：用Express搭建项目－Step1</a>
+            <a href="/2016/02/01/hello-world/">hexo 指南</a>
           </li>
         
       </ul>
@@ -132,7 +132,7 @@
         <section id="main"><article id="post-express" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/01/express/" class="article-date">
-  <time datetime="2016-01-31T16:57:20.000Z" itemprop="datePublished">2016-02-01</time>
+  <time datetime="2016-02-01T00:57:24.000Z" itemprop="datePublished">2016-02-01</time>
 </a>
     
   </div>
@@ -197,13 +197,13 @@
 </ol>
 <p>这时，访问<a href="http://localhost:3000，" target="_blank" rel="external">http://localhost:3000，</a><br>会发现页面显示’respond with a resource’，至于端口为什么是3000呢，请打开bin/www文件，然后你就明白啦：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> port = normalizePort(process.env.PORT || <span class="string">'3000'</span>);</span><br><span class="line">app.set(<span class="string">'port'</span>, port);</span><br></pre></td></tr></table></figure></p>
 <p>好啦，今天我们就讲到这里啦！看完这篇文章，怎样去搭建express项目应该知道了吧？看到后面对代码的一些解释，是不是对express也有了一些初步了解呢？如果真的是一头雾水的话，也没关系啦，接下来的文章，我将会通过‘意向填表系统’这个真实的案例来剖析Express。<br>提前剧透一下，下篇文章我会通过项目详细介绍Express中router和middleware（也就是我们今天反复提到的中间件）的使用哦！<br>顺便提前给大家看一下最后成形的项目结构是如何的：<br><img src="/images/folder.jpg" alt="msqing90"><br>细心的你会发现多了几个目录和文件哦，我们下节再详细介绍咯。</p>
-<h3 id="u8D34_u5FC3_u5C0F_u63D0_u793A_uFF1A"><a href="#u8D34_u5FC3_u5C0F_u63D0_u793A_uFF1A" class="headerlink" title="贴心小提示："></a>贴心小提示：</h3><p>想掌握一门知识呢，光看是不够滴！动动小手，快快敲动键盘亲自尝试下哦！</p>
+<h3 id="u8D34_u5FC3_u5C0F_u63D0_u793A_uFF1A"><a href="#u8D34_u5FC3_u5C0F_u63D0_u793A_uFF1A" class="headerlink" title="贴心小提示："></a>贴心小提示：</h3><p>想掌握一门知识呢，光看是不够滴！动动小手，快快敲动键盘亲自尝试下吧！</p>
 <p>本文参考链接：<br><a href="http://nodejs.org/" target="_blank" rel="external">http://nodejs.org/</a><br><a href="http://expressjs.com/" target="_blank" rel="external">http://expressjs.com/</a><br><a href="https://docs.mongodb.org/manual/" target="_blank" rel="external">https://docs.mongodb.org/manual/</a><br><a href="http://mongoosejs.com/" target="_blank" rel="external">http://mongoosejs.com/</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/01/express/" data-id="cik39jxfm0000ukvqhq19pi2a" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/01/express/" data-id="cik39oc0s0000vfvqqx8opdn4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -212,15 +212,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/02/01/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          hexo 指南
-        
-      </div>
-    </a>
   
+    <a href="/2016/02/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hexo 指南</div>
+    </a>
   
 </nav>
 

@@ -90,11 +90,11 @@
       <ul>
         
           <li>
-            <a href="/2016/02/01/hello-world/">hexo 指南</a>
+            <a href="/2016/02/01/express/">Nodejs初探之一：用Express搭建项目－Step1</a>
           </li>
         
           <li>
-            <a href="/2016/02/01/express/">Nodejs初探之一：用Express搭建项目－Step1</a>
+            <a href="/2016/02/01/hello-world/">hexo 指南</a>
           </li>
         
       </ul>
@@ -125,55 +125,10 @@
         
         <section id="main">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/02/01/hello-world/" class="article-date">
-  <time datetime="2016-02-01T00:55:54.000Z" itemprop="datePublished">2016-02-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/01/hello-world/">hexo 指南</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/01/hello-world/" data-id="cik39jxhs0001ukvqtpvjee2v" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-express" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/01/express/" class="article-date">
-  <time datetime="2016-01-31T16:57:20.000Z" itemprop="datePublished">2016-02-01</time>
+  <time datetime="2016-02-01T00:57:24.000Z" itemprop="datePublished">2016-02-01</time>
 </a>
     
   </div>
@@ -238,13 +193,58 @@
 </ol>
 <p>这时，访问<a href="http://localhost:3000，" target="_blank" rel="external">http://localhost:3000，</a><br>会发现页面显示’respond with a resource’，至于端口为什么是3000呢，请打开bin/www文件，然后你就明白啦：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> port = normalizePort(process.env.PORT || <span class="string">'3000'</span>);</span><br><span class="line">app.set(<span class="string">'port'</span>, port);</span><br></pre></td></tr></table></figure></p>
 <p>好啦，今天我们就讲到这里啦！看完这篇文章，怎样去搭建express项目应该知道了吧？看到后面对代码的一些解释，是不是对express也有了一些初步了解呢？如果真的是一头雾水的话，也没关系啦，接下来的文章，我将会通过‘意向填表系统’这个真实的案例来剖析Express。<br>提前剧透一下，下篇文章我会通过项目详细介绍Express中router和middleware（也就是我们今天反复提到的中间件）的使用哦！<br>顺便提前给大家看一下最后成形的项目结构是如何的：<br><img src="/images/folder.jpg" alt="msqing90"><br>细心的你会发现多了几个目录和文件哦，我们下节再详细介绍咯。</p>
-<h3 id="u8D34_u5FC3_u5C0F_u63D0_u793A_uFF1A"><a href="#u8D34_u5FC3_u5C0F_u63D0_u793A_uFF1A" class="headerlink" title="贴心小提示："></a>贴心小提示：</h3><p>想掌握一门知识呢，光看是不够滴！动动小手，快快敲动键盘亲自尝试下哦！</p>
+<h3 id="u8D34_u5FC3_u5C0F_u63D0_u793A_uFF1A"><a href="#u8D34_u5FC3_u5C0F_u63D0_u793A_uFF1A" class="headerlink" title="贴心小提示："></a>贴心小提示：</h3><p>想掌握一门知识呢，光看是不够滴！动动小手，快快敲动键盘亲自尝试下吧！</p>
 <p>本文参考链接：<br><a href="http://nodejs.org/" target="_blank" rel="external">http://nodejs.org/</a><br><a href="http://expressjs.com/" target="_blank" rel="external">http://expressjs.com/</a><br><a href="https://docs.mongodb.org/manual/" target="_blank" rel="external">https://docs.mongodb.org/manual/</a><br><a href="http://mongoosejs.com/" target="_blank" rel="external">http://mongoosejs.com/</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/01/express/" data-id="cik39jxfm0000ukvqhq19pi2a" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/01/express/" data-id="cik39oc0s0000vfvqqx8opdn4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/02/01/hello-world/" class="article-date">
+  <time datetime="2016-02-01T00:55:54.000Z" itemprop="datePublished">2016-02-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/01/hello-world/">hexo 指南</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/02/01/hello-world/" data-id="cik39oc2i0001vfvq3av28b6y" class="article-share-link">Share</a>
       
       
     </footer>
