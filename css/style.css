@@ -176,14 +176,8 @@ body {
   display: none;
 }
 .logo {
-  display: block;
-  width: 150px;
-  height: 24px;
-  background: url("images/logo.png") no-repeat;
-  -webkit-background-size: 150px 24px;
-  -moz-background-size: 150px 24px;
-  background-size: 150px 24px;
-  text-indent: -9999px;
+  color: #fff;
+  margin-top: 36px !important;
 }
 @media screen and (min-width: 768px) {
   #main {
